@@ -8,7 +8,7 @@
 <title>verification</title>
 <%@ include file="components/allCss.jsp"%>
 </head>
-<body>
+<body> 
 	<div class="d-flex justify-content-center mt-3">
 		<div class="card bg-success-subtle"
 			style="width: 250px; height: 310px; padding: 30px">

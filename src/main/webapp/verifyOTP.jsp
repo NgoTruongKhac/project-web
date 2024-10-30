@@ -12,7 +12,7 @@
 		<div class="card bg-success-subtle"
 			style="width: 250px; height: 310px; padding: 30px">
 			<form action="verifyOTP" method="post">
-				<div class="text-body-tertiary mb-2 text-center">
+			 	<div class="text-body-tertiary mb-2 text-center">
 					<i> mã OTP đã gửi về SMS của bạn</i>
 				</div>
 				<div class="d-flex justify-content-center text-center">
