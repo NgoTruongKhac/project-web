@@ -7,10 +7,10 @@
 <div class="container mt-3 mb-2">
 	<div class=row>
 
-		<div class="col-md-3">
+		<div class="col-md-3 mb-2">
 			<a href="index.jsp" class="text-decoration-none"><img
-				src="images/laptopStoreLogo.png"
-				style="width: 210px; margin-left: -20px"></a>
+				src="images/laptopStore.png"
+				style="width: 160px; "></a>
 		</div>
 		<div class="col-md-6">
 
@@ -32,7 +32,7 @@
 				<div class="dropdown">
 					<button id="accountIcon" type="button"
 						class="d-flex align-items-center btn btn-primary dropdown-toggle"
-						data-bs-toggle="dropdown" aria-expanded="false">
+						data-bs-toggle="dropdown" aria-expanded="false" style="height: 45px">
 						<i class="bi bi-person"></i> ${User.firstName}
 					</button>
 
@@ -55,7 +55,7 @@
 
 			<c:if test="${empty User}">
 				<button data-bs-toggle="modal" data-bs-target="#login" type="button"
-					class="btn btn-primary d-flex align-items-center">
+					class="btn btn-primary d-flex align-items-center" style="height: 45px">
 					<i class="bi bi-person"></i> Đăng Nhập
 				</button>
 				<%@include file="login.jsp"%>
@@ -63,7 +63,7 @@
 
 			<button data-bs-toggle="modal" data-bs-target="#register"
 				type="button" type="button"
-				class="btn btn-primary d-flex align-items-center">
+				class="btn btn-primary d-flex align-items-center" style="height: 45px">
 				<i class="bi bi-person-plus me-1"></i> Đăng ký
 			</button>
 			<%@include file="register.jsp"%>

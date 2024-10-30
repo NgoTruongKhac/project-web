@@ -14,6 +14,7 @@ public class User {
 	private Date birthday;
 	private String verificationCode;
 	private String avatar;
+	private String role;
 	
 	
 
@@ -110,6 +111,17 @@ public class User {
 
 	public void setUserId(int userId) {
 		this.userId = userId;
+	}
+	
+
+
+	public String getRole() {
+		return role;
+	}
+
+
+	public void setRole(String role) {
+		this.role = role;
 	}
 
 

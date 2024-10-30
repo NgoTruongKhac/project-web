@@ -43,6 +43,7 @@ public class LoginDAO {
 					user.setSex(rs.getString(9));
 					user.setBirthday(rs.getDate(10));
 					user.setAvatar(rs.getString(11));
+					user.setRole(rs.getString(12));
 				}
 			}
 
