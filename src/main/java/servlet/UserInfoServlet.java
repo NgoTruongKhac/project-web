@@ -37,7 +37,8 @@ public class UserInfoServlet extends HttpServlet {
 		
 		req.getSession().setAttribute("User",userRefesh);
 		
-		resp.sendRedirect("userInfo.jsp");
+//		resp.sendRedirect("userInfo.jsp");
+		req.getRequestDispatcher("userInfo.jsp").forward(req, resp);
 
 	}
 

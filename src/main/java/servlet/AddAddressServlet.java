@@ -36,9 +36,9 @@ public class AddAddressServlet extends HttpServlet {
 		boolean isAdd = addAddress.addAddress(address, userId);
 
 		if (isAdd) {
-			req.getSession().setAttribute("message", "Thêm địa chỉ thành công");
-			req.getSession().setAttribute("type", "success");
-			resp.sendRedirect(req.getContextPath()+"/userInfo");
+			req.setAttribute("message", "Thêm địa chỉ thành công");
+			req.setAttribute("type", "success");
+			req.getRequestDispatcher("/userInfo").include(req, resp);
 		}
 
 	}

@@ -13,23 +13,5 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry exported="true" kind="lib" path="D:/Downloads/sqljdbc_12.8.1.0_enu/sqljdbc_12.8/enu/jars/mssql-jdbc-12.8.1.jre11.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/javaMail/javax.mail.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/javax.activation-1.2.0.jar/javax.activation-1.2.0.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/twilio-10.0.0-rc.4.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/jackson-core-2.15.2.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/jackson-databind-2.15.2.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/httpclient-4.5.14-javadoc.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/httpclient-4.5.14.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/httpcore-4.4.16.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/jackson-datatype-jsr310-2.15.2.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/jackson-annotations-2.15.2.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/slf4j-api-2.0.7.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/spark-core-2.9.4.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/log4j-1.2-api-3.0.0-alpha1.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/jstl-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/jakarta.servlet.jsp.jstl-api-3.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/Downloads/jakarta.servlet.jsp.jstl-3.0.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -30,10 +30,15 @@ public class AuthorizationFilter implements Filter {
 		String role = user.getRole();
 
 		if ("customer".equals(role)) {
-			resp.sendRedirect("index.jsp");
-		} else if ("admin".equals(role)) {
-			resp.sendRedirect("adminPage.jsp");
+//			resp.sendRedirect("index.jsp");
+			req.setAttribute("message", "Đăng Nhập thành công!");
+			req.setAttribute("type", "success");
+			req.getRequestDispatcher("index.jsp").include(req, resp);
+		}if ("admin".equals(role)) {
+			req.setAttribute("message", "Đăng Nhập thành công!");
+			req.setAttribute("type", "success");
+			req.getRequestDispatcher("adminPage.jsp").include(req, resp);
 		}
-
+		
 	}
 }

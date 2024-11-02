@@ -126,8 +126,8 @@
 	</div>
 </nav>
 
-<c:set var="type" value="${sessionScope.type}" />
-<c:set var="error" value="${sessionScope.error}" />
+<c:set var="type" value="${requestScope.type}" />
+<c:set var="error" value="${requestScope.error}" />
 
 <c:if test="${type == 'error'}">
 	<c:if test="${error=='login'}">

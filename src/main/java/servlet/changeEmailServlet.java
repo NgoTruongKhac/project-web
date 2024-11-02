@@ -14,7 +14,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import sms.SmsUtil;
 
 @WebServlet("/changeEmail")
-public class changeEmailServlet extends HttpServlet {
+public class ChangeEmailServlet extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -41,9 +41,9 @@ public class changeEmailServlet extends HttpServlet {
 			req.getRequestDispatcher("verifyChangeEmail.jsp").forward(req, resp);
 
 		} else {
-			req.getSession().setAttribute("message", "email đã được sử dụng!");
-			req.getSession().setAttribute("type", "error");
-			req.getRequestDispatcher("userInfo.jsp").forward(req, resp);
+			req.setAttribute("message", "email đã được sử dụng!");
+			req.setAttribute("type", "error");
+			req.getRequestDispatcher("userInfo.jsp").include(req, resp);
 		}
 
 	}

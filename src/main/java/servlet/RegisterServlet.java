@@ -32,9 +32,9 @@ public class RegisterServlet extends HttpServlet {
 
 			if (!pass.equals(confirmPass)) {
 
-				req.getSession().setAttribute("message", "Mật khẩu không trùng khớp!");
-				req.getSession().setAttribute("type", "error");
-				req.getSession().setAttribute("error", "register");
+				req.setAttribute("message", "Mật khẩu không trùng khớp!");
+				req.setAttribute("type", "error");
+				req.setAttribute("error", "register");
 				req.getRequestDispatcher("index.jsp").forward(req, resp);
 				return;
 
@@ -85,9 +85,9 @@ public class RegisterServlet extends HttpServlet {
 
 			}
 
-			req.getSession().setAttribute("message", "email/số điện thoại không đúng hoặc đã được sử dụng");
-			req.getSession().setAttribute("type", "error");
-			req.getSession().setAttribute("error", "register");
+			req.setAttribute("message", "email/số điện thoại không đúng hoặc đã được sử dụng");
+			req.setAttribute("type", "error");
+			req.setAttribute("error", "register");
 			req.getRequestDispatcher("index.jsp").forward(req, resp);
 			
 

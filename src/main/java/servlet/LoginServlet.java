@@ -32,17 +32,14 @@ public class LoginServlet extends HttpServlet {
 				
 
 				req.getSession().setAttribute("User", user);
-				req.getSession().setAttribute("message", "Đăng Nhập thành công!");
-				req.getSession().setAttribute("type", "success");
-
 				// Chuyển hướng đến trang index.jsp
 				resp.sendRedirect("authorization");
 
 
 			} else {
-				req.getSession().setAttribute("message", "mật khẩu hoặc email/sđt không đúng!");
-				req.getSession().setAttribute("type", "error");
-				req.getSession().setAttribute("error", "login");
+				req.setAttribute("message", "mật khẩu hoặc email/sđt không đúng!");
+				req.setAttribute("type", "error");
+				req.setAttribute("error", "login");
 				req.getRequestDispatcher("index.jsp").include(req, resp);
 			}
 

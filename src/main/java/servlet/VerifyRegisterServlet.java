@@ -14,7 +14,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/verifyCode")
-public class VerificationServlet extends HttpServlet {
+public class VerifyRegisterServlet extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -36,8 +36,8 @@ public class VerificationServlet extends HttpServlet {
 
 		if (currentTime - verificationTime > 300000) {
 
-			req.getSession().setAttribute("message", "mã xác nhận đã hết hạn.");
-			req.getSession().setAttribute("type", "error");
+			req.setAttribute("message", "mã xác nhận đã hết hạn.");
+			req.setAttribute("type", "error");
 			req.getRequestDispatcher("verify.jsp").forward(req, resp);
 
 			return;
@@ -45,8 +45,8 @@ public class VerificationServlet extends HttpServlet {
 		}
 
 		if (!verificationCode.equals(ConfirmverificationCode) ) {
-			req.getSession().setAttribute("message", "Mã xác nhận không đúng.");
-			req.getSession().setAttribute("type", "error");
+			req.setAttribute("message", "Mã xác nhận không đúng.");
+			req.setAttribute("type", "error");
 			req.getRequestDispatcher("verify.jsp").forward(req, resp);
 			return;
 		}
@@ -61,8 +61,8 @@ public class VerificationServlet extends HttpServlet {
 
 		if (isVerified) {
 
-			req.getSession().setAttribute("message", "Đăng ký thành công! Bạn có thể đăng nhập.");
-			req.getSession().setAttribute("type", "success");
+			req.setAttribute("message", "Đăng ký thành công! Bạn có thể đăng nhập.");
+			req.setAttribute("type", "success");
 			req.getRequestDispatcher("index.jsp").forward(req, resp);
 
 		}

@@ -46,9 +46,9 @@ public class VerifyFogotPass extends HttpServlet {
 		boolean isChangePass = forgotPass.isChangePass(newPass, email);
 		
 		if (isChangePass) {
-			req.getSession().setAttribute("message", "Đổi mật khẩu thành công! Bạn có thể đăng nhập.");
-			req.getSession().setAttribute("type", "success");
-			resp.sendRedirect("index.jsp");
+			req.setAttribute("message", "Đổi mật khẩu thành công! Bạn có thể đăng nhập.");
+			req.setAttribute("type", "success");
+			req.getRequestDispatcher("index.jsp").forward(req, resp);
 		}
 	}
 	
